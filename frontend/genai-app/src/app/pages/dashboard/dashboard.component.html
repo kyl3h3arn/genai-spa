@@ -1,1 +1,17 @@
-<p>dashboard works!</p>
+<h2>Generative AI Innovation Summary</h2>
+<p>
+  OpenAI has introduced GPT-4o ("o" for "omni"), a new version of its generative AI model designed to enhance multimodal capabilities, especially in image generation. GPT-4o allows users to generate images in real time using simple text prompts. Unlike previous models that separated image and text processing, GPT-4o integrates vision, audio, and text into a single model architecture. This unified approach leads to improved speed and coherence in output across different input types. A standout feature is its ability to generate rich, detailed images from more natural, conversational instructions, rather than rigid or overly specific prompts. This not only streamlines the user experience but also increases creative flexibility. The model can also understand context better when generating visuals, resulting in more accurate and intuitive results. GPT-4o represents a step closer to fluid, human-like interaction between users and AI, as it supports cross-modal understanding and output generation. It is being gradually rolled out across OpenAI’s tools, including ChatGPT, and is expected to reshape the way developers and content creators interact with generative AI tools by improving accessibility, performance, and responsiveness.
+</p>
+<p>
+  <strong>Source:</strong>
+  <a href="https://openai.com/index/introducing-4o-image-generation" target="_blank">
+    https://openai.com/index/introducing-4o-image-generation
+  </a>
+</p>
+
+<hr />
+
+<h2>Technical Implementation</h2>
+<p>
+  This project is a Single Page Application (SPA) built using Angular for the frontend and Flask (Python) for the backend. JWT (JSON Web Token) is used to handle authentication between the frontend and backend through secure HTTP requests. The app interacts with protected API endpoints to retrieve data, including dynamic chart content related to Generative AI. MongoDB is available for potential data storage but is kept minimal to meet project requirements. The frontend and backend are decoupled and deployed on the same server, with Angular served through NGINX on port 80 and Flask running on port 3000 behind a reverse proxy.
+</p>

@@ -1,1 +1,22 @@
-<p>reports works!</p>
+<h2>Chart: Image Generation Speed Comparison</h2>
+
+<canvas
+  baseChart
+  [type]="chartType"
+  [data]="{
+    labels: chartLabels,
+    datasets: chartDataset
+  }"
+  [options]="chartOptions"
+></canvas>
+
+<p>
+  This line chart compares the image generation speed (in milliseconds) of recent generative AI models including GPT-4o and its predecessors. Lower values indicate faster response and generation times, highlighting performance improvements in the latest releases. These benchmarks are representative and based on publicly available benchmarks and OpenAI claims.
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <a href="https://openai.com/index/introducing-4o-image-generation" target="_blank">
+    OpenAI GPT-4o Announcement
+  </a>
+</p>

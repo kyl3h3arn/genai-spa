@@ -1,1 +1,22 @@
-<p>summary works!</p>
+<h2>Chart: Model Performance Comparison</h2>
+
+<canvas
+  baseChart
+  [type]="chartType"
+  [data]="{
+    labels: chartLabels,
+    datasets: chartDataset
+  }"
+  [options]="chartOptions"
+></canvas>
+
+<p>
+  This bar chart shows a comparison of performance among several recent generative AI models, including GPT-4, Claude 3, Gemini, and others. The values represent general performance benchmarks or perceived effectiveness based on public evaluations. The data is illustrative and aligned with recent GenAI updates.
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <a href="https://openai.com/index/introducing-4o-image-generation" target="_blank">
+    OpenAI GPT-4o Announcement
+  </a>
+</p>
