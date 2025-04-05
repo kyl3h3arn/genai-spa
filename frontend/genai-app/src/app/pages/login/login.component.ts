@@ -19,7 +19,7 @@ export class LoginComponent {
   constructor(private router: Router, private http: HttpClient) {}
 
   onSubmit(): void {
-    this.http.post<any>('http://localhost:3000/login', {
+    this.http.post<any>('/login', {
       username: this.username,
       password: this.password,
     }).subscribe({
